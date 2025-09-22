@@ -1,3 +1,4 @@
+import 'package:fitness_dashboard/widgets/dashboard_widget.dart';
 import 'package:fitness_dashboard/widgets/side_menu_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -20,9 +21,7 @@ class MainScreen extends StatelessWidget {
             ),
             Expanded(
               flex: 7,
-              child: Container(
-                color: Colors.blue,
-              ),
+              child: Dashboard(),
             ),
             Expanded(
               flex: 3,
