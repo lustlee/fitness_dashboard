@@ -1,5 +1,6 @@
 import 'package:fitness_dashboard/widgets/dashboard_widget.dart';
 import 'package:fitness_dashboard/widgets/side_menu_widget.dart';
+import 'package:fitness_dashboard/widgets/summary_widget.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatelessWidget {
@@ -21,13 +22,11 @@ class MainScreen extends StatelessWidget {
             ),
             Expanded(
               flex: 7,
-              child: Dashboard(),
+              child: DashboardWidget(),
             ),
             Expanded(
               flex: 3,
-              child: Container(
-                color: Colors.green,
-              ),
+              child: SummaryWidget(),
             ),
           ],
         ),

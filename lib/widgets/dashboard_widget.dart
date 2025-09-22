@@ -4,8 +4,8 @@ import 'package:fitness_dashboard/widgets/header_widget.dart';
 import 'package:fitness_dashboard/widgets/line_chart_card.dart';
 import 'package:flutter/material.dart';
 
-class Dashboard extends StatelessWidget {
-  const Dashboard({super.key});
+class DashboardWidget extends StatelessWidget {
+  const DashboardWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
