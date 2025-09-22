@@ -1,7 +1,9 @@
+import 'package:fitness_dashboard/util/responsive.dart';
 import 'package:fitness_dashboard/widgets/activity_details_card.dart';
 import 'package:fitness_dashboard/widgets/bar_graph_widget.dart';
 import 'package:fitness_dashboard/widgets/header_widget.dart';
 import 'package:fitness_dashboard/widgets/line_chart_card.dart';
+import 'package:fitness_dashboard/widgets/summary_widget.dart';
 import 'package:flutter/material.dart';
 
 class DashboardWidget extends StatelessWidget {
@@ -22,6 +24,8 @@ class DashboardWidget extends StatelessWidget {
             LineChartCard(),
             const SizedBox(height: 18),
             BarGraphCard(),
+            const SizedBox(height: 18),
+            if (Responsive.isTablet(context)) const SummaryWidget(),
           ],
         ),
       ),
