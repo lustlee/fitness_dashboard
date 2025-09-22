@@ -84,7 +84,7 @@ class LineChartCard extends StatelessWidget {
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,
                         colors: [
-                          selectionColor.withOpacity(0.5),
+                          selectionColor.withValues(alpha: 0.5),
                           Colors.transparent,
                         ],
                       ),
